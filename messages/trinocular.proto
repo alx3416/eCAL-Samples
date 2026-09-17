@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package protocolBuffers;
+
+import "messages/imagen.proto";
+
+message TripleVideoFrame {
+    VideoFrame left = 1;
+    VideoFrame center = 2;
+    VideoFrame right = 3;
+}
