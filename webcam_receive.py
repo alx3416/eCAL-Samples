@@ -3,7 +3,7 @@ import cv2
 import ecal.core.core as ecal_core
 from ecal.core.subscriber import ProtoSubscriber
 
-import imagen_pb2 as video_frame_pb2
+from messages import imagen_pb2 as video_frame_pb2
 
 ecal_core.initialize("Python Video Subscriber")
 

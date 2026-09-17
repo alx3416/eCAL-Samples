@@ -3,7 +3,7 @@ import time
 import ecal.core.core as ecal_core
 from ecal.core.publisher import ProtoPublisher
 
-import imagen_pb2 as video_frame_pb2
+from messages import imagen_pb2 as video_frame_pb2
 
 ecal_core.initialize("Python Video Publisher")
 

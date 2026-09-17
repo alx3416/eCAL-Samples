@@ -1,5 +1,4 @@
 import sys
-import time
 import os
 
 
@@ -8,13 +7,12 @@ from ecal.core.subscriber import ProtoSubscriber
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-
-import mi_mensaje_pb2 as mi_mensaje_pb2
+from messages import mi_mensaje_pb2 as mi_mensaje_pb2
 
 ecal_core.initialize("Python Protobuf Subscriber")
 
 sub = ProtoSubscriber("mensaje 1",
-                     mi_mensaje_pb2.HelloWorld)
+                      mi_mensaje_pb2.HelloWorld)
 protobuf_message = mi_mensaje_pb2.HelloWorld()
 counter = 0
 

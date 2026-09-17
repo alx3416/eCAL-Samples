@@ -8,8 +8,7 @@ from ecal.core.publisher import ProtoPublisher
 
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-
-import mi_mensaje_pb2 as mi_mensaje_pb2
+from messages import mi_mensaje_pb2 as mi_mensaje_pb2
 
 ecal_core.initialize("Python Protobuf Publisher")
 
